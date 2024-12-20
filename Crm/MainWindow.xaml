@@ -1,0 +1,28 @@
+﻿<Window x:Class="Crm2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Crm2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="430">
+    <Grid>
+        <Button x:Name="AddLead" Content="Add Lead" Height="23" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="150" Click="AddLead_Click" />
+        <Button x:Name="ConvertLead" Content="Convert Lead" Height="23" HorizontalAlignment="Left" Margin="262,10,0,0" VerticalAlignment="Top" Width="150" Click="ConvertLead_Click" />
+
+        <Label Height="25" Content="Name:" Margin="18,49,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="NameText" Height="25" HorizontalAlignment="Left" Margin="85,49,0,0" VerticalAlignment="Top" Width="316" />
+
+        <Label Height="25" Content="Numder:" Margin="18,77,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="NumberText" Height="25" HorizontalAlignment="Left" Margin="85,77,0,0" VerticalAlignment="Top" Width="316" />
+
+        <Label Height="25" Content="Project:" Margin="18,107,0,0" Width="60" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="ProjectNameText" Height="25" HorizontalAlignment="Left" Margin="85,107,0,0" VerticalAlignment="Top" Width="316" />
+
+        <Button x:Name="StatusProject" Content="Status project" Height="23" HorizontalAlignment="Left" Margin="324,150,0,0" VerticalAlignment="Top" Width="85" Click="StatusProject_Click" />
+        <TextBox x:Name="InfoText" Height="220" HorizontalAlignment="Left" VerticalAlignment="Top" Width="301" Margin="18,150,0,0" />
+
+        <Label x:Name="LabelTimeWait" Height="27" Width="301" Margin="18,384,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Время ожидания подписанного контракта:" />
+        <Button x:Name="Finish" Content="Finish" Height="23" HorizontalAlignment="Center" Margin="0,426,0,0" VerticalAlignment="Top" Width="386" Click="Finish_Click" />
+    </Grid>
+</Window>
